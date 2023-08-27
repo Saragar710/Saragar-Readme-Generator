@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "name": "saragar-readme-generator",
+  "description": "Learning to create a professional README Guide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saragar710/Saragar-Readme-Generator.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "Readme-Generator"
+  ],
+  "author": "Sara Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saragar710/Saragar-Readme-Generator/issues"
+  },
+  "homepage": "https://github.com/Saragar710/Saragar-Readme-Generator#readme"
+}
