@@ -15,6 +15,8 @@ function generateMarkdown(data) {
   return `# ${data.title} 
   ## Description
   ${data.description}
+  ## Table Of Contents
+  ${data.tableOfContents}
   ## Installation
   ${data.installation}
   ## Usage
@@ -23,6 +25,8 @@ function generateMarkdown(data) {
   ${data.credits}
   ## License
   ${data.license}
+  ## Tests
+  ${data.test}
 
 `;
 }

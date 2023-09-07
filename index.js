@@ -5,6 +5,16 @@ const path = require('path');
 const generateMarkdown = require('./generateMarkdown');
 
 const questions = [
+  {
+    type: 'input',
+    name: 'github',
+    message:"What is your github User Name?",   
+    }, 
+  {
+    type: 'input',
+    name: 'email',
+    message:"What is your email?",   
+    }, 
     {
         type: 'input',
         name: 'motivation',
@@ -38,6 +48,11 @@ const questions = [
     },
     {
       type:'input',
+      name: 'tableOfContents',
+      message: 'List all the items in your Readme',
+    },
+    {
+      type:'input',
       name: 'installation',
       message: 'What would you use to install this app?',
     },
@@ -55,6 +70,11 @@ const questions = [
       type:'input',
       name:'license',
       message: 'What license is used for this project?',
+    },
+    {
+      type:'input',
+      name:'test',
+      message: 'How do you test this project?',
     },
 ];
 
