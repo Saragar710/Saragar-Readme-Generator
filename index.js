@@ -4,6 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const generateMarkdown = require('./generateMarkdown');
 const licenses = require('licenses');
+// const renderLicenseBadge = require('licenseBagde');
+// const returnLicenseSection = require('licenseSection');
 
 // function licenses.list().then((list) => {
 //   console.log(list);
@@ -46,17 +48,17 @@ const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'What do you want to call this project',
+    message: 'What do you want to call this project?',
   },
   {
     type: 'input',
     name: 'description',
-    message: 'How would you describe this project',
+    message: 'How would you describe this project?',
   },
   {
     type: 'input',
     name: 'tableOfContents',
-    message: 'List all the items in your Readme',
+    message: 'Does this project have a table of contents?',
   },
   {
     type: 'input',
@@ -66,7 +68,7 @@ const questions = [
   {
     type: 'input',
     name: 'usage',
-    message: 'How would you use this project',
+    message: 'How would you use this project?',
   },
   {
     type: 'input',
@@ -93,7 +95,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  return fs.writeFileSync(`./${fileName}`, data)
+  // return fs.writeFileSync(`./${fileName}`, data)
+  fs.writeFileSync(`./${fileName}`, data);
 }
 
 // TODO: Create a function to initialize app
