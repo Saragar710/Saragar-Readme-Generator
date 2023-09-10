@@ -1,18 +1,12 @@
 // TODO: Include packages needed for this application
+//global variables
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
 const generateMarkdown = require('./generateMarkdown');
 const licenses = require('licenses');
-// const renderLicenseBadge = require('licenseBagde');
-// const returnLicenseSection = require('licenseSection');
 
-// function licenses.list().then((list) => {
-//   console.log(list);
-// }).catch((err) => {
-//   console.error(err);
-// });
-
+//questions you will get prompted to answer
 const questions = [
   {
     type: 'input',
@@ -108,7 +102,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer
     .prompt(questions
-      /* Pass your questions in here */
+    
 
     )
     .then((answers) => {
