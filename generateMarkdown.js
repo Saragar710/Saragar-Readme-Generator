@@ -75,7 +75,7 @@ ${renderLicenseLink(data.license)}
 
 
 
-  ${renderLicenseBadge(license)}
+  ${renderLicenseBadge(data.license)}
 
   ## Tests
   ${data.test}

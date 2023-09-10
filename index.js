@@ -16,6 +16,11 @@ const licenses = require('licenses');
 const questions = [
   {
     type: 'input',
+    name: 'name',
+    message: "What is your name?",
+  },
+  {
+    type: 'input',
     name: 'github',
     message: "What is your github User Name?",
   },
@@ -112,13 +117,7 @@ function init() {
       console.log(answers)
       writeToFile("README.md", generateMarkdown(answers))
     })
-    // .catch((error) => {
-    //   if (error.isTtyError) {
-    //     // Prompt couldn't be rendered in the current environment
-    //   } else {
-    //     // Something else went wrong
-    //   }
-    // });
+  
 }
 
 // Function call to initialize app
