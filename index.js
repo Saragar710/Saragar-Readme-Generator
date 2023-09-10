@@ -112,13 +112,13 @@ function init() {
       console.log(answers)
       writeToFile("README.md", generateMarkdown(answers))
     })
-    .catch((error) => {
-      if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
-      } else {
-        // Something else went wrong
-      }
-    });
+    // .catch((error) => {
+    //   if (error.isTtyError) {
+    //     // Prompt couldn't be rendered in the current environment
+    //   } else {
+    //     // Something else went wrong
+    //   }
+    // });
 }
 
 // Function call to initialize app

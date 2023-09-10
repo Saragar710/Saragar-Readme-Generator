@@ -33,14 +33,14 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   const licenseSection = license.license;
-  if (license === "MIT") {
-    return "The MIT License";
-  } else if (license === "GPLv3") {
-    return "The GNU General Public License (GPL)";
-  } else if(license === "Apache 2.0") {
-    return "The Apache 2.0 License";{
-    } 
-  }
+  if (license !== "none") {
+    return`-[license](#license)`;
+  // } else if (license === "GPLv3") {
+  //   return "The GNU General Public License (GPL)";
+  // } else if(license === "Apache 2.0") {
+  //   return "The Apache 2.0 License";{
+  //   } 
+   }
 }
 
 // TODO: Create a function to generate markdown for README
@@ -55,6 +55,8 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
+  - [Tests](#tests)
+  - [Questions](#questions)
 ${renderLicenseLink(data.license)}
 
   ## Installation
@@ -67,6 +69,7 @@ ${renderLicenseLink(data.license)}
   ## Credits
   ${data.credits}
 
+  ## License
   ${renderLicenseSection(data.license)}
   ${data.license}
 
@@ -77,7 +80,10 @@ ${renderLicenseLink(data.license)}
   ## Tests
   ${data.test}
   
-
+  ## Questions
+  ${data.name}
+  ${data.email}
+  ${data.github}
 `;
 }
 
